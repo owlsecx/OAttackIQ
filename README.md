@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Breach and Attack Simulation
+OAttackIQ is a lightweight breach-and-attack-simulation (BAS) tool for safely testing whether security controls detect and respond to common adversary behaviours. It exercises benign, controlled techniques so blue teams can validate detection coverage and tune their alerting without causing harm. Results can be saved to a JSON report to track control effectiveness over time.
 
 ---
 
 ## ✨ Features
 
-- Safely simulate adversary techniques to validate security controls and detection
+- Safe breach-and-attack-simulation of common adversary techniques
+- Validates detection and response of existing security controls
+- Benign, non-destructive test activity only
+- Optional local HTTP server for simulation scenarios
+- JSON report export via native save dialog or path entry
+- Scripting-friendly --no-pause mode for automation
 
 ---
 
@@ -39,6 +44,8 @@ Breach and Attack Simulation
 
 ```bash
 ./OAttackIQ
+./OAttackIQ --no-pause
+./OAttackIQ --help
 ```
 
 ---
